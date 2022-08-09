@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <section id="header">
-        <div class="container" id="header__container">
+    <header id="main-header">
+        <div class="container">
             <div class="header__wrap">
                 <div class="header__logo">
                     <span>AX</span>
@@ -24,13 +24,13 @@
                         <li class="header__nav-list--item"><a href="#">Reviews</a></li>
                         <li class="header__nav-list--item"><a href="#">Contact</a></li>
                     </ul>
-                    <button type="button"><i class="fa-light fa-bars"></i></button>
                 </nav>
+                <button type="button" class="header__button"><i class="fa-light fa-bars"></i></button>
             </div>
         </div>
-    </section>
+    </header>
     <section id="main">
-        <div class="container" id="main__container">
+        <div class="container">
             <div class="main__wrap">
                 <div class="main__left">
                     <span class="main__logo">AX</span>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="main__right">
-                    <form action="index.html" method="post" class="main__form">
+                    <form method="post" class="main__form">
                         <div class="form__content">
                             <h3 class="form__title"> <span class="form__title-start">Try Your <span class="form__title-middle">free</span> Trial Today</span></h3>
                             <div class="form__content--item">
@@ -66,22 +66,23 @@
         </div>
     </section>
     <section id="social">
-        <div class="container" id="social__container">
+        <div class="container">
             <div class="social__wrap">
                 <div class="social-media">
-                    <h2>Social Media</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    <h2 class="social__title">Social Media</h2>
+                    <div class="social__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p> 
+                    </div>
                 </div>
-                <div class="social__logos">
-                    <nav class="social__logos-nav">
-                        <ul class="social__logos-list">
-                            <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                            <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                            <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-stumbleupon"></i></a></li>
-                            <li class="social__logos-list--item"><a href="#"><i class="fa-light fa-rss"></i></a></li>
+                <nav class="social__logos-nav">
+                    <ul class="social__logos-list">
+                        <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="social__logos-list--item"><a href="#"><i class="fa-brands fa-stumbleupon"></i></a></li>
+                        <li class="social__logos-list--item"><a href="#"><i class="fa-light fa-rss"></i></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -89,7 +90,7 @@
         </div>
     </section>
     <section id="tabs">
-        <div class="container" id="tabs__container">
+        <div class="container">
             <div class="tabs__wrap">
                 <div class="tabs__btns">
                     <button type="button" class="tabs__btn--item">Tab 1</button>
@@ -99,8 +100,8 @@
                 <div class="tabs__content">
                     <div class="tabs__content-first">
                       <div class="tabs__content-description">
-                        <h2 class="tabs__content-description tabs__content-description--heading">Tabs with soft transitioning effect.</h2>
-                        <div class="tabs__content-description tabs__content-description--describe">
+                        <h2 class="tabs__content-description--heading">Tabs with soft transitioning effect.</h2>
+                        <div class="tabs__content-description--describe">
                           <p class="first__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
                           bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
                           justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
@@ -108,7 +109,7 @@
                           <p class="second__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
                           bibendum laoreet.</p>
                         </div>
-                        <div class="tabs__content-description tabs__content-description--btn">
+                        <div class="tabs__content-description--btn">
                           <a href="#" class="tabs__link">Dowload</a>
                         </div>
                       </div>
@@ -206,7 +207,7 @@
         </div>
     </section>
     <section id="pricing">
-        <div class="container" id="pricing__container">
+        <div class="container">
             <h2 class = "title"> pricing options</h2>
             <div class="description" id="pricing__description">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -255,7 +256,7 @@
         </div>
     </section>
     <section id="customers">
-        <div class="container" id="customers__container">
+        <div class="container">
             <h2 class = "title"> What our customers are saying</h2>
             <div class="description" id="customers__description">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -263,7 +264,7 @@
             <div class="reviews__wrap">
                 <div class="reviews">
                     <div class="reviews__review">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate quos mollitia magni.</p>
+                        <p class="reviews__review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate quos mollitia magni.</p>
                     </div>
                     <div class="reviews__customer">
                         <div class="reviews__img">
@@ -277,7 +278,7 @@
                 </div>
                 <div class="reviews">
                     <div class="reviews__review">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate quos mollitia magni.</p>
+                        <p class="reviews__review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate quos mollitia magni.</p>
                     </div>
                     <div class="reviews__customer">
                         <div class="reviews__img">
@@ -291,7 +292,7 @@
                 </div>
                 <div class="reviews">
                     <div class="reviews__review">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate quos mollitia magni.</p>
+                        <p class="reviews__review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate quos mollitia magni.</p>
                     </div>
                     <div class="reviews__customer">
                         <div class="reviews__img">
@@ -307,18 +308,49 @@
         </div>
     </section>
     <section id="axure">
-        <div class="container" id="axure__container">
-            <h2 class = "title"> Stylish axure design</h2>
+        <div class="container">
+            <h2 class = "title" id="axure__title"> Stylish axure design</h2>
             <div class="description" id="axure__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p id="axure__description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="axure__link">
                 <a href="#">Download</a>
             </div>
         </div>
     </section>
-    <section id="footer">
-        <div class="container" id="footer__container">
+    <!--<section id="contact">
+        <div class="container" id="contact__container">
+            <h2 class = "title"> Why this is awesome </h2>
+            <div class="description" id="contact__description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <form method="post" class="contact__form">
+                <div class="contact__form-content">
+                  <div class="form-content__left">
+                    <div class="form-content__left--item">
+                      <label for="userName_contactForm">Name</label>
+                      <input type="text" class="contact__input" id="userName-contactForm" name="userName-contactForm" required minlength="2" maxlength="15">
+                    </div>
+                    <div class="form-content__left--item">
+                      <label for="email_contactForm">Email</label>
+                      <input type="email" class="contact__input" id="email-contactForm" name="email-contactForm" required minlength="6" maxlength="20">
+                    </div>
+                    <div class="form-content__left--item">
+                      <label for="password_contactForm">Password</label>
+                      <input type="password" class="contact__input" id="password-contactForm" name="password-contactForm" required minlength="6" maxlength="25">
+                    </div>
+                  </div>
+                  <div class="form-content__right">
+                    <label for="textarea-contactForm">Message</label>
+                    <textarea name="textarea-contactForm" id="textarea-contactForm"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="contact__form-button">Send Message</button>
+              </form>
+        </div>
+    </section>-->
+    <footer id="footer">
+        <div class="container">
             <nav class="footer__nav">
                 <ul class="footer__list">
                     <li class="footer__list-logo"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -331,10 +363,10 @@
                 </ul>
             </nav>
             <div class="footer__bottom">
-                <p>&copy 2015 Axure Themes</p>
+                <p class="footer__bottom-text">&copy 2015 Axure Themes</p>
             </div>
         </div>
-    </section>
+    </footer>
 </body>
 
 </html>
