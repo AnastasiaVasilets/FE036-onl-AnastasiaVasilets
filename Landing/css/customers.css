@@ -1,0 +1,126 @@
+#customers{
+    width: 100%;
+    padding: 80px 0;
+}
+
+#customers__description{
+    margin-bottom: 67px;
+}
+
+.reviews__wrap{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+
+.reviews{
+    margin: 0 15px;
+    width: 298px;
+}
+
+.reviews__review{
+    background-color: rgba(226, 226, 226, 1);
+    border-radius: 7px;
+    padding: 9px 22px 6px 23px;
+    margin-bottom: 22px;
+    position: relative;
+    
+}
+
+.reviews__review::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #e2e2e2;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 43px;
+}
+
+.reviews__review-text{
+    color:rgba(134, 135, 139, 1);
+    font-size: calc(12px + 2 * (100vw / 1200));
+    font-weight: 400;
+    font-family: 'Open Sans';
+    text-align: center;
+    flex-grow: 1;
+    
+}
+
+.reviews__customer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews__img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.reviews__img img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.reviews__customer-info{
+    text-align: end;
+}
+
+.reviews__customer-name{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: calc(16px + 4 * (100vw / 1200));
+    color:rgba(51, 51, 51, 1);
+}
+
+.reviews__customer-occupation{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: calc(14px + 2 * (100vw / 1200));
+    color: rgba(134, 135, 139, 1);
+}
+
+@media(max-width:1139px){
+    #customers{
+        padding: 60px 0;
+    }
+}
+
+@media(max-width:983px){
+    .reviews__wrap{
+        justify-content: center;
+    }
+    .reviews{
+        margin-bottom: 15px;
+    }
+    .reviews:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:759px){
+    #customers{
+        padding: 50px 0;
+    }
+    #customers__description{
+        margin-bottom: 45px;
+    }
+    .reviews__review-text{
+        font-size: calc(12px + (2 + 2 * 0.7) * ((100vw - 320px) / 1200));
+    }
+    .reviews__customer-name{
+        font-size: calc(16px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));
+    }
+    .reviews__customer-occupation{
+        font-size: calc(14px + (2 + 2 * 0.7) * ((100vw - 320px) / 1200));
+    }
+}
+

@@ -1,0 +1,102 @@
+#main-header{
+    padding: 20px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.header__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+.header__logo{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 15px;
+}
+
+.header__logo span::after{
+    content: 'IT';
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 30px;
+    color: rgba(236, 121, 121, 1);
+}
+
+.header__nav{
+    width: 489px;
+    margin: 0 15px;
+}
+
+.header__nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-list{
+
+}
+
+.header__nav-list--item{
+    transition: 0.5s;
+}
+
+.header__nav-list--item a{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: calc(13px + 2 * (100vw / 1200));
+    color: rgba(255, 255, 255, 0.7);
+    padding: 8px 0;
+}
+
+.header__nav-list--item:hover {
+    transform: translate(0, -3px);
+    transition: 0.5s;
+  }
+
+.header__nav-list--item a:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.header__button{
+    display: none;
+}
+
+@media (max-width:759px){
+    #header{
+        padding: 15px 0;
+    }
+    .header__nav-list--item a{
+        font-size: calc(13px + (2 + 2 * 0.7) * ((100vw - 320px) / 1200));
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__button{
+        display: block;
+        background-color: inherit;
+        border: none;
+        margin: 0 15px;
+    }
+
+    .header__button i{
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 30px;
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+    }
+}
+
+@media(max-width:450px){
+    #header{
+        padding: 10px 0;  
+    }
+}
